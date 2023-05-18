@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.header  {
+  font-size: 40px;
+  font-family:'Poppins', sans-serif;
+  text-align: center;
+  min-height: 25vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url("images/tabimage.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.trail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+
+  background: linear-gradient(0deg,
+      rgb(4, 58, 129) 0%,
+      rgb(240, 240, 239) 100%);
+}
+
+#gameCanvas {
+  box-shadow: 10px 10px 20px black;
+}
+
+#top_header {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(20, 6, 6);
+}
+
+nav {
+  display: flex;
+  padding: 2% 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#icon_img {
+  border: 5px solid #476bd7;
+  padding: 5px;
+  width: 120px;
+  border-radius: 50px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links li:hover{
+  background-color:#7f7a7a
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.body{
+  background-color: #dfd8d8;
+}
+.about_us{
+  
+  background: #cad8e2;
+  color: #2d1515;
+  font-family: 'Sans-Serif';
+  padding: 20px;
+  border: 3px solid white;
+  border-top: 0;
+  border-radius: 10px;
+  margin: 0 auto; /* Add this line to center horizontally */
+  width: 800px;
+  margin-top:20px;
+  margin-bottom:20px;
+  }
+.instructions{
+   background: #a8a8a8;
+  color: #000000;
+
+  padding: 20px;
+  border: 3px solid white;
+  border-top: 0;
+  border-radius: 10px;
+  margin: 0 auto; /* Add this line to center horizontally */
+  width: 800px;
+  margin-top:20px;
+  margin-bottom:20px;
+  
+}
+.trail{
+  display: flex;
+  padding: 2% 20%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.contact{
+  background-color: #b9b1b3;
+  font-family:Sans-Serif;
+  padding:20px ;
+  border:0px;
+  border-top: 0px;
+  border-radius: 8%;
+  margin-left:2%;
+  margin-right:2%;
+  margin-bottom: 2%;
+}
+.social-icon{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  color:black;
+  border-radius: 20%;
+}
+ion-icon {
+  font-size: 64px;
+  color:black;}
+
+
+.bottom-nav{
+  display: flex;
+  flex-direction:column;
+  padding: 2% 20%;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#000000;
+  color:white;
+}
+

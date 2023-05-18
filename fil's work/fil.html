@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Department information and technological advancement display</title>
+	<style>
+		.popupContainer {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: none;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.popupContent {
+			background-color: beige;
+			padding: 20px;
+			border-radius: 6px;
+			text-align: center;
+		}
+
+		#closePopup {
+			margin-top: 10px;
+		}
+	</style>
+	<script>
+		function showMessage(containerId) {
+			document.getElementById(containerId).style.display = "flex";
+		}
+
+		function hideMessage(containerId) {
+			document.getElementById(containerId).style.display = "none";
+		}
+		document.addEventListener('keydown', function(event) {
+			if (event.code === 'Space') {
+				showMessage('popupContainer1');
+				event.preventDefault(); // Prevents the default behavior of space bar scrolling the page
+			}
+		});
+	</script>
+</head>
+<body>
+	<button id="openPopup1" onclick="showMessage('popupContainer1')">Oncology</button>
+
+	<div id="popupContainer1" class="popupContainer">
+		<div id="popupContent1" class="popupContent">
+			<h1>Oncology</h1>
+			<p>This department specializes in the diagnosis and treatment of cancer.</p>
+			<h2>Impact of computing in society</h2>
+			<p>Advanced imaging systems</p>
+			<p>Electronic Health Records (EHRs)</p>
+			<p>Data Analytics</p>
+			<h3>Dep. Advancement.</h3>
+			<p>Precision medicine using genetic testing.</p>
+			<p>Robotic-assisted surgery</p>
+			<p>Immunotherapy</p>
+			<button id="closePopup1" onclick="hideMessage('popupContainer1')">Close</button>
+		</div>
+	</div>
+
+	<button id="openPopup2" onclick="showMessage('popupContainer2')">Radiology</button>
+
+	<div id="popupContainer2" class="popupContainer">
+		<div id="popupContent2" class="popupContent">
+			<h1>Radiology</h1>
+			<p>Imaging tests such as X-rays, CT scans, MRI scans, or ultrasounds.</p>
+			<h2>Impact of computing in society</h2>
+			<p>Digital Imaging</p>
+			<p>Picture Archiving and Communication Systems (PACS)</p>
+			<p>Electronic Medical Records (EMRs): Radiology reports and images</p>
+			<h3>Dep. Advancement.</h3>
+			<p>New technology innovation include:</p>
+			<p>CT, MRI, and PET scans (PACS)</p>
+			<button id="closePopup2" onclick="hideMessage('popupContainer2')">Close</button>
+		</div>
+	</div>
+		<button id="openPopup3" onclick="showMessage('popupContainer3')">Records</button>
+
+	<div id="popupContainer3" class="popupContainer">
+		<div id="popupContent3" class="popupContent">
+			<h1>Records</h1>
+			<p>Responsible for maintaining secure, accurate and comprehensive patient records.</p>
+			<h2>Impact of computing in society</h2>
+			<p>Electronic Health Records (EHRs):</p>
+			<p>Improved patient Care</p>
+			<p>improved Security</p>
+			<h3>Dep. Advancement.</h3>
+			<p>Electronic Health Reecords</p>
+			<p>Health information exchange</p>
+			<p>Mobile Health</p>
+			<p>Blockchain for security</p>
+			<button id="closePopup3" onclick="hideMessage('popupContainer3')">Close</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
